@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Interactive Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Interactive Recipe Finder</h1>
+
+        <input type="text" id="ingredient-input" placeholder="Enter ingredients (e.g., eggs, tomato, cheese)" />
+
+        <select id="diet-type">
+            <option value="">All Diets</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="vegan">Vegan</option>
+            <option value="gluten free">Gluten Free</option>
+            <option value="ketogenic">Ketogenic</option>
+        </select>
+
+        <select id="meal-type">
+            <option value="">All Meals</option>
+            <option value="breakfast">Breakfast</option>
+            <option value="main course">Main Course</option>
+            <option value="dessert">Dessert</option>
+            <option value="appetizer">Appetizer</option>
+        </select>
+
+        <button id="search-button">Find Recipes</button>
+
+        <div id="spinner" class="hidden">Loading...</div>
+
+        <h2>Recipes</h2>
+        <div id="recipes"></div>
+
+        <h2>Favorite Recipes</h2>
+        <div id="favorites"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
